@@ -1,0 +1,104 @@
+<!--
+    Wendy Bronson
+    September 25, 2026
+    Module 9.3 Assignment: JavaScript Exercise, Part 1
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="CSD 340 Module 9.3 Assignment">
+    <meta name="keywords" content="HTML, CSS, Bellevue University, CSD 340">
+    <meta name="author" content="Wendy Bronson">
+    <meta name="robots" content="noindex">
+    <title>CSD 340 Development with HTML and CSS</title>
+
+    <link rel="stylesheet" href="Bronson_Mod9_3.css">
+
+    <script>
+         var word1 = "bicycle";
+         var word2 = "green";
+         var word3 = "neighbor";
+         var word4 = "pajamas";
+    </script>
+</head>
+
+<body>
+    <div id="container">
+
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+
+           <h2>Chapter 1: Winning My First Bicycle</h2>
+
+            <p class="intro">
+               When I was six years old, I had an experience that felt like a really big deal at the time.
+               Our local grocery store was giving away a <span id="word1">________</span>, and my family 
+               entered the drawing whenever we had the chance. My parents could not afford to buy bicycles 
+               for all of us, so winning one seemed almost impossible. The bike was lime <span id="word2">________</span> and yellow 
+               and covered with Mello Yello advertising, which made it stand out even more. I remember 
+               filling out as many entry forms as I could every time we went to the store.
+            </p>
+
+            <p>
+               One of the neighborhood kids was always at our house, and we practically grew up together
+               during grade school. He entered the contest too, and we both hoped one of us might win.
+               On the day of the drawing, he happened to be at the grocery store and was chosen to pull
+               the winning name from the jar. He was nervous because we had both entered so many times
+               and really wanted the bike. Out of all the names in the drawing, he ended up pulling mine.
+            </p>
+
+            <p>
+               I was at home when the drawing took place, so I had no idea that I had won. My grandmother
+               lived next door to the <span id="word3">________</span> who had drawn my name, and she called my mom to tell us
+               the news. The grocery store wanted me to come back so they could take a picture for the
+               local newspaper. Since it was already close to bedtime, I went to the store still wearing my <span id="word4">________</span>. 
+               They had me ride the bike around the parking lot while they took my picture,
+               and the next morning my photo appeared in the newspaper. For a six-year-old, winning that
+               bike and ending up in the paper was something I never forgot.
+
+                     
+             <p>  
+               <button type="button"
+                   onclick="document.getElementById('word1').innerHTML = word1">
+                   bicycle
+               </button>
+            
+               <button type="button"
+                   onclick="document.getElementById('word2').innerHTML = word2">
+                   green
+               
+               <button type="button"
+                   onclick="document.getElementById('word3').innerHTML = word3">
+                   neighbor
+               </button>
+
+               <button type="button"
+                   onclick="document.getElementById('word4').innerHTML = word4">
+                   pajamas
+               </button>
+              </p>
+             </p>
+     <hr>
+     <address>
+        <p>
+          <a href="https://www.bellevue.edu/" target="_blank">
+            Bellevue University
+          </a>
+        </p>
+
+        <p>1000 Galvin Road South
+        </p>
+        <p>Bellevue, NE 68005
+        </p>
+     </address>
+
+          
+           
+     
+
+    </div>
+
+</body>
+
+</html>
