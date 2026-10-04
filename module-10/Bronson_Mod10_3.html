@@ -1,0 +1,76 @@
+<!--
+    Wendy Bronson
+    September 29, 2026
+    Assignment 10.3: JavaScript - Part 2
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <script>
+       function changeLakeImage() {
+          var lake = document.getElementById("lakeImage");
+
+          if (lake.getAttribute("src") === "Lakephoto.jpg") {
+              lake.src = "Lakephoto2.jpg";
+          } else {
+              lake.src = "Lakephoto.jpg";
+          }
+      }
+
+      function changeBeachImage() {
+          var beach = document.getElementById("beachImage");
+
+          if (beach.getAttribute("src") === "beachphoto.jpeg") {
+              beach.src = "Beachphoto2.jpg";
+          } else {
+              beach.src = "beachphoto.jpeg";
+          }
+      }
+     </script>
+
+</head>
+
+<body>
+
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+
+    <p>
+        Run your mouse over each image and click to change the picture.
+        
+    </p>
+
+    <div>
+        <h2>Lake Getaway</h2>
+
+        <img id="lakeImage"
+             src="Lakephoto.jpg"
+             alt="Lake getaway"
+             width="400"
+             onclick="changeLakeImage()">
+
+        <p>Move your mouse over the lake image and click to change the view.</p>
+    </div>
+
+    <br>
+
+    <div>
+        <h2>Beach Getaway</h2>
+
+        <img id="beachImage"
+             src="beachphoto.jpeg"
+             alt="Beach getaway"
+             width="400"
+             onclick="changeBeachImage()">
+
+        <p>Move your mouse over the beach image and click to change the view.</p>
+    </div>
+
+</body>
+
+</html>
